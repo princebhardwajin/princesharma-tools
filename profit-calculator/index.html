@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon vs Flipkart vs Meesho Profit Calculator (2026) · Free | Prince Sharma</title>
+<meta name="description" content="Free profit calculator for Indian sellers. Compare your real profit on Amazon, Flipkart and Meesho after commission, closing fees, shipping, GST, ads and returns. Find the price for your target margin.">
+<link rel="canonical" href="https://tools.princesharma.in/profit-calculator/">
+<meta property="og:title" content="Amazon vs Flipkart vs Meesho Profit Calculator">
+<meta property="og:description" content="See your real profit on each marketplace after every fee, and the price you need for your target margin.">
+<meta property="og:url" content="https://tools.princesharma.in/profit-calculator/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070B1A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Amazon vs Flipkart vs Meesho Profit Calculator","url":"https://tools.princesharma.in/profit-calculator/","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"creator":{"@type":"Person","name":"Prince Sharma","url":"https://princesharma.in/"}}</script>
+</head>
+<body>
+<header class="hero">
+  <div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="https://princesharma.in/">Prince<span>.</span> <small>Tools</small></a>
+    <div class="nav-links">
+      <a href="https://tools.princesharma.in/">All tools</a>
+      <a href="https://princesharma.in/work/">Portfolio</a>
+      <a href="https://princesharma.in/blog/">Blog</a>
+    </div>
+    <a class="nav-cta" href="https://princesharma.in/contact/">Get an ads audit</a>
+  </nav>
+  <div class="hero-in">
+    <span class="pill"><i></i>Free tool · No sign-up · Fees verified <span data-verified></span></span>
+    <h1 id="title">Amazon vs Flipkart<br><span class="grad">profit calculator</span></h1>
+    <p id="subtitle">See your real profit on each platform after commission, fees, shipping, GST, ads and returns. Then find the price that hits your target margin.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="bar">
+    <div class="seg" role="tablist" aria-label="Calculator mode">
+      <button type="button" role="tab" data-mode="profit" aria-selected="true">Check my profit</button>
+      <button type="button" role="tab" data-mode="price" aria-selected="false">Find my price</button>
+    </div>
+    <div class="seg" role="tablist" aria-label="Platform">
+      <button type="button" role="tab" data-plat="af" aria-selected="true"><i class="dot a"></i>Amazon <em>vs</em> <i class="dot f"></i>Flipkart</button>
+      <button type="button" role="tab" data-plat="meesho" aria-selected="false"><i class="dot m"></i>Meesho</button>
+    </div>
+  </div>
+
+  <div class="grid">
+    <form class="inputs" id="form" autocomplete="off" onsubmit="return false">
+      <section class="card">
+        <h2><span class="step">1</span>Your product</h2>
+        <div class="fields">
+          <label class="f" data-show="profit"><span>Selling price (incl. GST)</span>
+            <span class="in"><b>₹</b><input type="number" inputmode="decimal" min="1" step="1" name="price" value="999"></span></label>
+          <label class="f hl" data-show="price"><span>Target profit margin</span>
+            <span class="in"><input type="number" inputmode="decimal" min="0" max="80" step="1" name="target" value="20"><b>%</b></span></label>
+          <label class="f"><span>Product cost</span>
+            <span class="in"><b>₹</b><input type="number" inputmode="decimal" min="0" step="1" name="cost" value="350"></span></label>
+          <label class="f"><span>Category</span><select name="category"></select></label>
+          <label class="f"><span>GST rate</span>
+            <select name="gst"><option value="18">18%</option><option value="12">12%</option><option value="5">5%</option><option value="28">28%</option><option value="0">0% (exempt)</option></select></label>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2><span class="step">2</span>Shipping &amp; fulfilment</h2>
+        <div class="fields">
+          <label class="f"><span>Actual weight (packed)</span>
+            <span class="in"><input type="number" inputmode="decimal" min="0" step="0.05" name="weight" value="0.6"><b>kg</b></span></label>
+          <fieldset class="f box"><legend>Box size (cm)</legend>
+            <span class="in"><input type="number" inputmode="decimal" min="0" name="l" value="25" aria-label="Length in cm"><b>×</b><input type="number" inputmode="decimal" min="0" name="w" value="20" aria-label="Width in cm"><b>×</b><input type="number" inputmode="decimal" min="0" name="h" value="10" aria-label="Height in cm"></span></fieldset>
+          <label class="f"><span>Shipping zone</span>
+            <select name="zone"><option value="national">National</option><option value="regional">Regional / zonal</option><option value="local">Local (same city)</option></select></label>
+          <label class="f" data-show-plat="af"><span>Fulfilment</span>
+            <select name="fulfilment"><option value="platform">Platform delivers</option><option value="warehouse">Platform warehouse (FBA)</option><option value="self">I ship myself</option></select></label>
+          <label class="f" data-self-ship hidden><span>Your shipping cost per order</span>
+            <span class="in"><b>₹</b><input type="number" inputmode="decimal" min="0" name="selfShip" value="70"></span></label>
+          <label class="f" data-show-plat="af"><span>COD orders</span>
+            <span class="in"><input type="number" inputmode="decimal" min="0" max="100" name="cod" value="50"><b>%</b></span></label>
+        </div>
+        <p class="note" id="weightNote"></p>
+      </section>
+
+      <section class="card">
+        <h2><span class="step">3</span>Ads, returns &amp; volume</h2>
+        <div class="sliders">
+          <label class="sl"><span><span>Ad spend (% of sales)</span><b id="adsOut">10%</b></span>
+            <input type="range" min="0" max="40" step="1" name="ads" value="10"></label>
+          <label class="sl"><span><span>Returns &amp; RTO</span><b id="retOut">8%</b></span>
+            <input type="range" min="0" max="50" step="1" name="returns" value="8"></label>
+          <label class="sl" data-show-plat="meesho"><span><span>Returns that come back damaged or lost</span><b id="lostOut">10%</b></span>
+            <input type="range" min="0" max="50" step="1" name="lost" value="10"></label>
+          <label class="f"><span>Units sold per month</span>
+            <span class="in"><input type="number" inputmode="numeric" min="0" step="1" name="units" value="300"><b>units</b></span></label>
+          <label class="check"><input type="checkbox" name="gstRegistered" checked><span><b>I’m GST registered</b><small>Claim GST on fees and ads as input credit</small></span></label>
+        </div>
+      </section>
+    </form>
+
+    <section class="results" id="results" aria-live="polite" aria-label="Results">
+      <div class="banner" id="priceBanner" hidden></div>
+      <div class="cards" id="cards"></div>
+      <div class="card" id="breakdownCard">
+        <div class="card-head"><h2 id="bdTitle">Where your money goes</h2><span class="legend" id="legend"></span></div>
+        <div id="breakdown" class="bd"></div>
+      </div>
+      <div class="tips" id="tipsCard"><div class="glow g3" aria-hidden="true"></div><h2>Smart tips</h2><ul id="tips"></ul></div>
+      <div class="cross" id="cross"></div>
+      <div class="actions">
+        <button type="button" class="btn" id="saveBtn"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>Save product</button>
+        <button type="button" class="btn" id="shareBtn"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Share link</button>
+        <button type="button" class="btn" id="csvBtn"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>Excel (CSV)</button>
+        <button type="button" class="btn primary" id="pdfBtn"><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/></svg>Download PDF</button>
+      </div>
+      <div class="saved" id="saved" hidden><h3>Saved products</h3><ul id="savedList"></ul></div>
+    </section>
+  </div>
+
+  <section class="card fees" aria-labelledby="feesTitle">
+    <div class="fees-head">
+      <div><h2 id="feesTitle">Amazon, Flipkart and Meesho fee structure</h2>
+        <p>The commission, fee and shipping charts this calculator uses. Verified <span data-verified></span>. Tags show where each number comes from.</p></div>
+      <button type="button" class="btn soft" id="feesToggle" aria-expanded="false" aria-controls="feesBody">View fee structure ▾</button>
+    </div>
+    <div id="feesBody" hidden>
+      <div class="fees-bar">
+        <div class="seg small" role="tablist" aria-label="Fee chart platform">
+          <button type="button" role="tab" data-ftab="amazon" aria-selected="true">Amazon</button>
+          <button type="button" role="tab" data-ftab="flipkart" aria-selected="false">Flipkart</button>
+          <button type="button" role="tab" data-ftab="meesho" aria-selected="false">Meesho</button>
+        </div>
+        <span class="tags"><span class="tag official">Official</span> from the platform · <span class="tag public">Public</span> recent public breakdown · <span class="tag estimate">Estimate</span> check your rate card</span>
+      </div>
+      <div class="ftables" id="feeTables"></div>
+      <div class="fees-foot"><a id="officialLink" href="#" target="_blank" rel="noopener">Official fee page ↗</a><button type="button" class="btn primary" id="editFeesBtn">Edit fees</button></div>
+    </div>
+  </section>
+
+  <section class="info">
+    <div class="card"><h3>What’s included</h3><p>Commission by category and price, closing and fixed fees, weight and zone shipping, collection fees, GST on fees, ads, returns and RTO.</p></div>
+    <div class="card"><h3>GST, done right</h3><p>Output GST comes out of your price. GST on fees and ads counts as input credit if you’re registered. TCS and TDS show as cash held back, not lost.</p></div>
+    <div class="card"><h3>Your data stays with you</h3><p>Everything is calculated in your browser. Nothing you enter is sent to or stored on a server.</p></div>
+  </section>
+
+  <section class="faq card">
+    <h2>Common questions</h2>
+    <details><summary>Does Amazon charge a referral fee under ₹1,000?</summary><p>No. From 16 March 2026, Amazon India charges zero referral fee on products priced under ₹1,000 in most categories. Closing fees and shipping fees still apply.</p></details>
+    <details><summary>Does Flipkart charge commission under ₹1,000?</summary><p>Flipkart charges zero commission on eligible products priced under ₹1,000, and from July 2026 zero commission on fashion at every price. Fixed, collection and shipping fees still apply.</p></details>
+    <details><summary>What is volumetric weight?</summary><p>Length × width × height in cm, divided by 5,000. Platforms charge shipping on whichever is higher: actual or volumetric weight. A smaller box can move you into a cheaper slab.</p></details>
+    <details><summary>Why can my fees differ from this calculator?</summary><p>Fees vary by seller tier, sub-category and programme, and platforms change them often. Use “Edit fees” to match your own rate card from Seller Central, Seller Hub or the Meesho supplier panel.</p></details>
+  </section>
+
+  <section class="cta">
+    <div class="glow g4" aria-hidden="true"></div>
+    <div><h2>Margins look thin? <span class="grad">Let’s fix your ads.</span></h2>
+      <p>I’m Prince, a performance marketer who has run Amazon and Flipkart ads at 5.7x–7.9x ROAS. I can audit your account.</p></div>
+    <a class="btn primary big" href="https://princesharma.in/contact/">Get a free ads audit →</a>
+  </section>
+</main>
+
+<footer class="foot"><span>© 2026 Prince Sharma · <a href="https://princesharma.in/">princesharma.in</a></span><span>Estimates only. Always confirm fees in your seller account.</span></footer>
+
+<div class="sticky" id="sticky" aria-hidden="true"><div id="stickyVals"></div><a href="#results" class="btn primary">See results ↑</a></div>
+
+<dialog id="feeDialog" aria-labelledby="feeDlgTitle">
+  <form method="dialog" id="feeForm">
+    <div class="dlg-head"><div><h2 id="feeDlgTitle">Edit fees</h2><p>Change any value to match your seller account. Saved on this device only.</p></div><button class="x" value="cancel" aria-label="Close">×</button></div>
+    <div class="seg small" role="tablist" aria-label="Platform to edit">
+      <button type="button" role="tab" data-etab="amazon" aria-selected="true">Amazon</button>
+      <button type="button" role="tab" data-etab="flipkart" aria-selected="false">Flipkart</button>
+      <button type="button" role="tab" data-etab="meesho" aria-selected="false">Meesho</button>
+    </div>
+    <div id="feeEdit" class="fe"></div>
+    <div class="dlg-foot"><button type="button" class="btn" id="resetFees">Reset to defaults</button><button class="btn primary" value="apply" id="applyFees">Apply fees</button></div>
+  </form>
+</dialog>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="fees.js"></script>
+<script src="calc.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

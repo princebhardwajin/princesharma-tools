@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://tools.princesharma.in/sitemap.xml
