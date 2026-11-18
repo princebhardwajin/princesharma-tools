@@ -2,7 +2,7 @@
 
 Free calculators for Indian e-commerce sellers and performance marketers, live at **[tools.princesharma.in](https://tools.princesharma.in/)**.
 
-Built by [Prince Sharma](https://princesharma.in/), AI-powered performance marketer.
+Built by [Prince Bhardwaj](https://princesharma.in/), AI-powered performance marketer.
 
 ## Tools
 

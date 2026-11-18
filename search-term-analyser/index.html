@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon &amp; Flipkart Search Term Report Analyser · Free | Prince Bhardwaj</title>
+<meta name="description" content="Free search term report analyser for Amazon and Flipkart ads. Upload your report to find wasted spend, winning search terms and words to negate, then download ready-to-use negative and exact keyword lists.">
+<link rel="canonical" href="https://tools.princesharma.in/search-term-analyser/">
+<meta property="og:title" content="Amazon & Flipkart Search Term Report Analyser">
+<meta property="og:description" content="Find the search terms eating your ad budget, and the winners to scale. Free, runs in your browser.">
+<meta property="og:url" content="https://tools.princesharma.in/search-term-analyser/">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#070B1A">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../profit-calculator/styles.css">
+<link rel="stylesheet" href="sta.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Amazon & Flipkart Search Term Report Analyser","url":"https://tools.princesharma.in/search-term-analyser/","applicationCategory":"BusinessApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"creator":{"@type":"Person","name":"Prince Bhardwaj","url":"https://princesharma.in/"}}</script>
+</head>
+<body>
+<header class="hero">
+  <div class="glow g1" aria-hidden="true"></div><div class="glow g2" aria-hidden="true"></div>
+  <nav class="nav" aria-label="Main">
+    <a class="logo" href="https://princesharma.in/">Prince<span>.</span> <small>Tools</small></a>
+    <div class="nav-links">
+      <a href="https://tools.princesharma.in/">All tools</a>
+      <a href="https://princesharma.in/work/">Portfolio</a>
+      <a href="https://princesharma.in/blog/">Blog</a>
+    </div>
+    <a class="nav-cta" href="https://princesharma.in/contact/">Get an ads audit</a>
+  </nav>
+  <div class="hero-in">
+    <span class="pill"><i></i>Free tool · Amazon &amp; Flipkart · Your file never leaves your browser</span>
+    <h1>Find the search terms<br><span class="grad">eating your ad budget</span></h1>
+    <p>Upload your Amazon or Flipkart search term report. See the terms wasting money and the winners to scale, then download ready-to-use keyword lists.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ===== Upload ===== -->
+  <div class="up-grid" id="uploadArea">
+    <section class="card up-card" aria-labelledby="upTitle">
+      <div class="up-head">
+        <h2 id="upTitle"><span class="step">1</span>Upload your search term report</h2>
+        <div class="seg small" role="tablist" aria-label="Platform">
+          <button type="button" role="tab" data-plat="amazon" aria-selected="true"><i class="dot a"></i>Amazon</button>
+          <button type="button" role="tab" data-plat="flipkart" aria-selected="false"><i class="dot f"></i>Flipkart</button>
+        </div>
+      </div>
+      <label class="drop" id="drop">
+        <input type="file" id="file" accept=".csv,.xlsx,.xls,text/csv">
+        <span class="drop-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg></span>
+        <b id="dropTitle">Drop your report here</b>
+        <span id="dropSub">.csv or .xlsx · we detect Amazon or Flipkart automatically</span>
+        <span class="btn primary">Choose file</span>
+      </label>
+      <p class="err" id="err" role="alert" hidden></p>
+      <div class="sample">
+        <span><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/></svg>No report handy? See how it works.</span>
+        <button type="button" class="btn soft" id="sampleBtn"><span>Try a sample <span data-pname>Amazon</span> report →</span></button>
+      </div>
+      <details class="how">
+        <summary><span>How to download your <span data-pname>Amazon</span> search term report</span></summary>
+        <ol data-how="amazon">
+          <li>In the Amazon Ads console, open your Sponsored Products campaigns.</li>
+          <li>Open the <b>Search terms</b> tab (or go to <b>Reports → Create report → Sponsored Products → Search term</b>).</li>
+          <li>Pick a date range of at least 30 days.</li>
+          <li>Download as .csv or .xlsx and drop it above.</li>
+        </ol>
+        <ol data-how="flipkart" hidden>
+          <li>Log in to Flipkart Ads and open <b>Reports</b>.</li>
+          <li>Choose the <b>Search term</b> (query) report for your PLA campaigns.</li>
+          <li>Pick a date range of at least 30 days and download the .csv.</li>
+          <li>Drop the file above. The start and end date lines at the top are handled for you.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section class="card rules-card" aria-labelledby="rulesTitle">
+      <h2 id="rulesTitle"><span class="step">2</span>Your numbers</h2>
+      <div class="sliders" data-rules></div>
+      <p class="note" id="rulesNote">Not sure? Most sellers start with a target ACoS of 25–30%. Leave clicks on Auto.</p>
+    </section>
+  </div>
+
+  <!-- ===== Results ===== -->
+  <section id="results" hidden aria-label="Analysis">
+    <div class="rep-bar">
+      <span class="rep-chip" id="repChip"></span>
+      <button type="button" class="btn ghost" id="again"><svg viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M17 8l-5-5-5 5"/><path d="M12 3v12"/></svg>Upload another report</button>
+    </div>
+
+    <div class="kpis" id="kpis"></div>
+
+    <section class="card" aria-labelledby="splitTitle">
+      <div class="row-head"><h2 id="splitTitle"><span>Where your <span id="spendLbl"></span> went</span></h2><span class="muted">Share of ad spend by verdict</span></div>
+      <div class="split" id="splitBar" role="img"></div>
+      <div class="legend2" id="legend"></div>
+      <div class="alert" id="alert"></div>
+    </section>
+
+    <section class="rules-bar" aria-label="Your rules">
+      <b>Your rules</b>
+      <div class="rb" data-rules-compact></div>
+    </section>
+
+    <section class="card terms" aria-labelledby="termsTitle">
+      <h2 id="termsTitle" class="sr">Search terms</h2>
+      <div class="t-tools">
+        <div class="seg small" role="tablist" aria-label="Filter search terms" id="tabs"></div>
+        <div class="t-right">
+          <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><span class="sr">Search terms</span><input type="search" id="q" placeholder="Search terms"></label>
+          <button type="button" class="btn ghost" id="copyBtn"><svg viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg><span id="copyLbl">Copy</span></button>
+        </div>
+      </div>
+      <p class="t-hint" id="tabHint"></p>
+      <div class="tbl" id="tbl"></div>
+      <button type="button" class="btn ghost more2" id="moreBtn" hidden>Show more</button>
+    </section>
+
+    <div class="two">
+      <section class="card" aria-labelledby="wTitle">
+        <h2 id="wTitle">Words wasting money</h2>
+        <p class="muted" style="margin:-8px 0 16px">Single words across all your search terms. Add the worst ones as negative phrase to block every term that contains them.</p>
+        <div id="words"></div>
+      </section>
+      <section class="card" aria-labelledby="dTitle">
+        <h2 id="dTitle">Download your lists</h2>
+        <p class="muted" style="margin:-8px 0 14px">CSV files that open in Excel or Google Sheets.</p>
+        <div class="dls" id="dls"></div>
+      </section>
+    </div>
+
+    <section class="tips2" aria-labelledby="tipsTitle">
+      <div class="glow g3" aria-hidden="true"></div>
+      <h2 id="tipsTitle">What I’d do first</h2>
+      <ol id="tips"></ol>
+    </section>
+  </section>
+
+  <section class="info3" aria-label="About this tool">
+    <div class="card"><h3>How terms are sorted</h3><p><b class="t-win">Winner</b>: 2+ orders at or better than your target. <b class="t-bleed">Bleeding</b>: sells, but worse than break-even. <b class="t-waste">Wasted</b>: enough clicks to expect a sale, and none came. <b class="t-watch">Watch</b>: everything else.</p></div>
+    <div class="card"><h3>Private by design</h3><p>Your report is read in your browser. Nothing is uploaded to a server or stored anywhere.</p></div>
+    <div class="card"><h3>Amazon and Flipkart formats</h3><p>Reads Amazon’s search term downloads (console and reports) and Flipkart’s query report, .csv or .xlsx. Repeated terms are merged.</p></div>
+  </section>
+
+  <section class="cta">
+    <div class="glow g4" aria-hidden="true"></div>
+    <div><h2>Want this done for you every week? <span class="grad">Let’s talk.</span></h2><p>I’m Prince, a performance marketer running Amazon and Flipkart ads for sports and D2C brands, at up to 10.7x ROAS.</p></div>
+    <a class="btn primary big" href="https://princesharma.in/contact/">Get a free ads audit →</a>
+  </section>
+</main>
+
+<div class="sticky2" id="sticky" hidden>
+  <span><b id="stickyAmt"></b><small id="stickySub"></small></span>
+  <button type="button" class="btn primary" id="stickyBtn">Download</button>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<footer class="foot"><span>© 2026 Prince Bhardwaj · <a href="https://princesharma.in/">princesharma.in</a> · <a href="https://tools.princesharma.in/">More free tools</a></span><span><a href="https://github.com/princebhardwajin/princesharma-tools">Source on GitHub</a></span></footer>
+
+<script src="engine.js"></script>
+<script src="samples.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
